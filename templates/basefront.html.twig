@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block top %}
+    <div class="container">
+        <div class="text-center">
+            <h1>Mes voyages</h1>
+            <p>Je vais vous présenter les vilees que j'ai visitées lors de mes voyages.</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="{{ path('accueil') }}">Accueil</a>
+                <a class="nav-link" href="{{ path('voyages') }}">Voyages</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+{% endblock %}
+{% block body %}{% endblock %}
